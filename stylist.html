@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+<head>
+    <meta charset="utf-8">
+    <title>Oakland Barber Salon</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neuton:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+
+
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- metaviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- angular and routes cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+
+<!-- body -->
+<body ng-app="multiPageApp">
+
+
+<!-- NAVIGATION -->
+    <nav>
+    
+        <img src="img/logo.png" class="mainLogo" alt="logo">
+    
+    <div id="navbar" class="navbarr" data-spy="affix" data-offset-top="205">
+        <ul><!-- setup like this so there are no white spaces in between -->
+            <li><a href="index.html">HOME</a></li
+            ><li><a href="services.html">SERVICES</a></li
+            ><li><a href="stylist.html" class="navactive">STYLIST</a></li
+            ><li><a href="#">CONTACT</a></li
+            ><li><a href="#">SOCIAL</a></li
+            ><li><a href="#">SHOP</a></li
+            ><li><a href="#" class="navbooking"><p>ONLINE<br>BOOKING</p></a></li>
+        </ul>
+    </div>
+
+    </nav>
+
+    <!-- angular-route / all views going in this div -->
+    <!-- <div ng-view>
+        
+    </div> -->
+    <div id="stylist">
+        <h1>MEET THE TEAM</h1>
+        <p>Friends don't let freinds have a bad hair day.</p>
+        <div class="grayline"></div><!-- blue line -->
+
+        
+        <button class="whitebtn">Online Booking</button>
+        
+        <section>
+            <div class="moDiv">
+                <img src="img/mo.png" alt="moImg" class="moImg">
+            </div>
+
+            <div class="davidDiv">
+                <img src="img/david.png" alt="davidImg" class="davidImg">
+            </div>
+        </section>
+        <article>
+            <div class="stylistdiv">
+                <img src="img/scissors.png" alt="scissors" class="scissors">
+                <h1>STYLIST</h1>
+                <div class="blackline"></div>
+                <ul>
+                    <li>Women + Men</li>
+                    <li>Cut</li>
+                    <li>Color</li>
+                    <li>Fades</li>
+                </ul>
+            </div>
+
+            <div class="barberdiv">
+                <img src="img/clip.png" alt="clip" class="clip">
+                <h1>BARBER</h1>
+                <div class="blackline"></div>
+                <ul>
+                    <li>Mens</li>
+                    <li>Fades</li>
+                    <li>Shaves</li>
+                    <li>Beard Line-Up</li>
+                </ul>
+            </div>
+        </article>
+
+    <!-- online booking -->
+
+        <div class="bookbtnsection">
+          <button>Online Booking</button>
+        </div>
+
+    </div><!-- stylist id -->
+
+
+
+
+
+
+
+<!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="social">
+        <a href="https://www.facebook.com/ChezMoiSalon160/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/ChezMoiSalon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/chezmoisalon/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UC_lgR3_AYdAkpTbisCzsUMA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+   
+
+
+</body>
+</html>

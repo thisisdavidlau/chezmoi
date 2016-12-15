@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+<head>
+    <meta charset="utf-8">
+    <title>Oakland Barber Salon</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neuton:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+
+
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- metaviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- angular and routes cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+
+<!-- body -->
+<body ng-app="multiPageApp">
+
+
+<!-- NAVIGATION -->
+    <nav>
+    
+        <img src="img/logo.png" class="mainLogo" alt="logo">
+    
+    <div id="navbar" class="navbarr" data-spy="affix" data-offset-top="205">
+        <ul><!-- setup like this so there are no white spaces in between -->
+            <li><a href="index.html">HOME</a></li
+            ><li><a href="services.html" class="navactive">SERVICES</a></li
+            ><li><a href="stylist.html">STYLIST</a></li
+            ><li><a href="#">CONTACT</a></li
+            ><li><a href="#">SOCIAL</a></li
+            ><li><a href="#">SHOP</a></li
+            ><li><a href="#" class="navbooking"><p>ONLINE<br>BOOKING</p></a></li>
+        </ul>
+    </div>
+
+    </nav>
+
+    <!-- angular-route / all views going in this div -->
+    <!-- <div ng-view>
+        
+    </div> -->
+
+
+
+<div class="services container">
+  <div class="firstsection">
+    <div class="menscut">
+      <h1>MEN'S CUT</h1>
+      <ul class="menscutprices1">
+        <li>$ 15</li>
+        <li>$ 25</li>
+        <li>$ 35</li>
+      </ul>
+      <ul class="menscuttype1">
+        <li>FADED + BUZZ</li>
+        <li>SHORT + CLASSIC</li>
+        <li>LONG + SWOON</li>
+      </ul>
+      <div class="line"></div><!-- blue line -->
+      <ul class="menscutprices2">
+        <li>$ 10</li>
+        <li>$ 10</li>
+        <li>$ 5+</li>
+        <li>$ 10</li>
+      </ul>
+      <ul class="menscuttype2">
+        <li>BEARD TRIM</li>
+        <li>LINE UP</li>
+        <li>DESIGN</li>
+        <li>SHAMPOO + STYLE</li>
+      </ul>
+    </div><!-- menscut -->
+
+    
+    <div class="womenscut">
+      <h1>WOMEN'S CUT</h1>
+      <ul class="womenscutprices1">
+        <li>$ 45</li>
+        <li>$ 65</li>
+      </ul>
+      <ul class="womenscuttype1">
+        <li>SHORT HAIR</li>
+        <li>LONG HAIR</li>
+      </ul>
+      <div class="line"></div>
+      <ul class="womenscutprices2">
+        <li>$ 10</li>
+      </ul>
+      <ul class="menscuttype2">
+        <li>BANG TRIM</li>
+      </ul>
+      <h2>*COMPLIMENTARY BLOWOUT*</h2>
+    </div><!-- womenscut -->
+  </div><!-- first section -->
+
+
+  <div class="secondsection">
+    <div class="menscolor">
+      <h1>MEN'S COLOR</h1>
+      <ul class="menscolorprices1">
+        <li>$ 55+</li>
+        <li>$ 30+</li>
+        <li>$ 100+</li>
+        <li>$ 75+</li>
+        <li>$ 80+</li>
+      </ul>
+      <ul class="menscolortype1">
+        <li>FULL COLOR</li>
+        <li>COLOR RETOUCH</li>
+        <li>FULL BLONDE</li>
+        <li>BLONDE RETOUCH</li>
+        <li>HIGHLIGHTS</li>
+      </ul>
+      
+    </div><!-- menscolor -->
+
+    <div class="womenscolor">
+      <h1>WOMEN'S COLOR</h1>
+      <ul class="womenscolorprices1">
+        <li>$ 75+</li>
+        <li>$ 40+</li>
+        <li>$ 200+</li>
+        <li>$ 100+</li>
+      </ul>
+      <ul class="womenscolortype1">
+        <li>FULL COLOR</li>
+        <li>COLOR RETOUCH</li>
+        <li>FULL BLONDE</li>
+        <li>BLONDE RETOUCH</li>
+      </ul>
+      <div class="line"></div><!-- blue line -->
+
+      <ul class="womenscolorprices2">
+        <li>$ 80+</li>
+        <li>$ 135+</li>
+        <li>$ 200+</li>
+      </ul>
+      <ul class="womenscolortype2">
+        <li>PARTIAL HIGHLIGHTS</li>
+        <li>FULL HIGHLIGHTS</li>
+        <li>FULL BLONDE HIGHLIGHTS</li>
+      </ul>
+      
+      <div class="line"></div><!-- blue line -->
+
+      <ul class="womenscolorprices3">
+        <li>$ 135+</li>
+        <li>$ 135+</li>
+      </ul>
+      <ul class="womenscolortype3">
+        <li>OMBRE</li>
+        <li>BALAYAGE</li>
+      </ul>
+    </div><!-- womenscolor -->
+  </div><!-- secondsection -->
+
+  <div class="thirdsection">
+    
+    <div class="styling">
+      <h1>STYLING</h1>
+      <ul class="stylingprices">
+        <li>$ 45</li>
+        <li>$ 50</li>
+        <li>$ 65+</li>
+        <li>$ 80+</li>
+      </ul>
+      <ul class="stylingtype">
+        <li>BLOW OUT</li>
+        <li>IRON WORK</li>
+        <li>UP DO</li>
+        <li>PERM</li>
+      </ul>
+      
+    </div><!-- styling -->
+
+    <div class="treatment">
+      <h1>TREATMENT</h1>
+      <ul class="treatmentprices">
+        <li>$ 60</li>
+        <li>$ 30+</li>
+        <li>$ 25+</li>
+      </ul>
+      <ul class="treatmenttype">
+        <li>KERATIN</li>
+        <li>TEA TREE</li>
+        <li>OLAPLEX</li>
+      </ul>
+      
+    </div><!-- treatment -->
+
+  </div><!-- thirdsection -->
+  
+  <div class="fourthsection">
+    <div class="consultation">
+      <h1>[+] CONSULTATION</h1>
+      <ul class="consultationtype">
+        <li>FREE CONSULTATION FOR COLOR.</li>
+        <li>TREATMENT AND UP DO TO DETERMINE THE RIGHT AMOUNT OF:</li>
+        <li>+ TIME</li>
+        <li>+ PRODUCTS</li>
+        <li>+ PRICE</li>
+        <li>[BY APPOINTMENTS ONLY]</li>
+      </ul>
+
+      <div class="line"></div><!-- blue line -->
+
+      <ul class="consultationtype2">
+        <li>HAIRCUT & STYLE</li>
+        <li>[WALK-INS WELCOME]</li>
+      </ul>
+      
+    </div><!-- consultation -->
+    
+
+  </div><!-- fourthsection -->
+
+  </div>
+
+<!-- CAROUSEL -->
+    <section class="gallery">
+
+        <div id="carousel-example-generic" class="carousel slide gallerybox" data-ride="carousel">
+      
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href=""><div class="thumb1" id="thumb1"><p id="p1">$35</p><img src="img/thumb1.jpg" alt="thumb1" class="img1"></div></a>
+                    <a href=""><div class="thumb2" id="thumb2"><p id="p2">$35</p><img src="img/thumb2.jpg" alt="thumb2" class="img2"></div></a>
+                    <a href=""><div class="thumb3" id="thumb3"><p id="p3">$35</p><img src="img/thumb3.jpg" alt="thumb3" class="img3"></div></a>
+                    <a href=""><div class="thumb4" id="thumb4"><p id="p4">$35</p><img src="img/thumb4.jpg" alt="thumb4" class="img4"></div></a>
+                    <a href=""><div class="thumb5" id="thumb5"><p id="p5">$35</p><img src="img/thumb5.jpg" alt="thumb5" class="img5"></div></a>  
+                </div>
+                <div class="item">
+                    <a href=""><div class="thumb6" id="thumb6"><p id="p6">$35</p><img src="img/thumb6.jpg" alt="thumb6" class="img6"></div></a>
+                    <a href=""><div class="thumb7" id="thumb7"><p id="p7">$35</p><img src="img/thumb7.jpg" alt="thumb7" class="img7"></div></a>
+                    <a href=""><div class="thumb8" id="thumb8"><p id="p8">$35</p><img src="img/thumb8.jpg" alt="thumb8" class="img8"></div></a>
+                    <a href=""><div class="thumb9" id="thumb9"><p id="p1">$35</p><img src="img/thumb9.jpg" alt="thumb9" class="img9"></div></a>
+                    <a href=""><div class="thumb10" id="thumb10"><p id="p1">$35</p><img src="img/thumb10.jpg" alt="thumb10" class="img10"></div></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <p>(SCROLL OR CLICK OVER IMAGES FOR PRICES AND DESCRIPTIONS)</p>
+
+    </section><!-- carousel -->
+
+    <div class="bookbtnsection">
+      <button>Online Booking</button>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="social">
+        <a href="https://www.facebook.com/ChezMoiSalon160/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/ChezMoiSalon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/chezmoisalon/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UC_lgR3_AYdAkpTbisCzsUMA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+   
+
+
+</body>
+</html>
